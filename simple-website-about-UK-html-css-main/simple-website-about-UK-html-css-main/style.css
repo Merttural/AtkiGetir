@@ -1,0 +1,284 @@
+/* UTILITIES */
+
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+   
+ font-family: cursive;
+}
+a {
+ text-decoration: none;
+}
+li {
+ list-style: none;
+}
+#change-color-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color:  rgb(38, 117, 174);
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #change-color-btn:hover {
+    background-color:#ab0cb1;
+  }
+  
+  .color-1 {
+    background-color: #f2f2f2;
+  }
+  
+  .color-2 {
+    background-color: #d3d3d3;
+  }
+  
+  .color-3 {
+    background-color: #a9a9a9;
+  }
+/* NAVBAR STYLING STARTS */
+.navbar {
+
+ position:fixed;
+ z-index:100;  
+ top:0 ;left:0; right:0;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px;
+
+ background-color: rgb(16, 4, 154);
+
+  /* AHMED NASR */
+ color: #fff;
+}
+.nav-links a {
+
+ color: #f8f8f8;
+}
+/* LOGO */
+.logo {
+ font-size: 32px;
+}
+/* NAVBAR MENU */
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+}
+.menu li:hover {
+ background-color: #a9a1a1;
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu li {
+ padding: 5px 14px;
+}
+/* DROPDOWN MENU */
+.services {
+ position: relative; 
+}
+.dropdown {
+ background-color: rgb(38, 117, 174);
+ padding: 1em 0;
+ position: absolute; 
+ display: none;
+ border-radius: 8px;
+ top: 35px;
+}
+.dropdown li + li {
+ margin-top: 10px;
+}
+.dropdown li {
+ padding: 0.5em 1em;
+ width: 8em;
+ text-align: center;
+ text-decoration: #4c9e9e;
+ 
+}
+.dropdown li:hover {
+ background-color: #a22fcf;
+}
+.services:hover .dropdown {
+ display: block;
+}
+
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+ display: none;
+} 
+/*HAMBURGER MENU*/
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+.menu { 
+ display:none;
+ position: absolute;
+ background-color:rgb(128, 0, 0);
+ right: 0;
+ left: 0;
+ text-align: center;
+ padding: 16px 0;
+}
+.menu li:hover {
+ display: inline-block;
+ background-color:#4c9e9e;
+ transition: 0.3s ease;
+}
+.menu li + li {
+ margin-top: 12px;
+}
+input[type=checkbox]:checked ~ .menu{
+ display: block;
+}
+.hamburger {
+ display: block;
+}
+.dropdown {
+ left: 50%;
+ top: 30px;
+ transform: translateX(35%);
+}
+.dropdown li:hover {
+ background-color: #4c9e9e;
+}
+}
+
+
+
+.intro{
+    width: 50%;
+    padding: 10px;
+    margin-top: 80px;
+}
+
+.intro p{
+    font-size: 20px;
+}
+
+
+.landmarks{
+    padding: 10px;
+}
+
+.landmarks .land {
+    width: 50%;
+}
+
+.landmarks .land h3{
+    margin-bottom: 10px;
+}
+
+.landmarks .land img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.landmarks .land p{
+    margin-bottom: 10px;
+}
+
+
+.food{
+    padding: 10px;
+}
+
+.food .meal {
+    width: 50%;
+}
+
+.food .meal h2{
+    margin-bottom: 10px;
+}
+
+.food .meal img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.food .meal p{
+    margin-bottom: 10px;
+}
+
+.culture{
+    padding: 10px;
+    
+}
+
+.culture .intro{
+    margin-bottom: 30px;
+    
+}
+
+.culture .cul{
+    margin-bottom: 30px;
+}
+
+.culture .cul h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.culture .cul img{
+    width: 45%;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.culture .cul .cul_info{
+    width: 50%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main{
+   
+    margin-top: 20px;
+    padding: 10px;
+    margin-top: 80px;
+}
+
+.main img{
+    width: 45%;
+    display: inline-block;
+}
+
+.main .m{
+    width: 45%;
+    display: inline-block;
+    position: absolute;
+    margin-left: 10px;
+  
+}
+.im{ text-decoration: none;
+    width: 139px;
+    height: 79p;
+    flex-direction: row;
+    color:teal;
+    border-radius: 20px;
+    box-shadow: 0 19px rgb(0, 0, 0,0.2);
+
+    background-color: white;
+}.im a{
+    margin-left: 50px;
+    margin-top: 50%;
+    text-decoration: none;
+}
+.im img{
+    margin-top: -50px;
+    margin-left: 10px;
+}
+
